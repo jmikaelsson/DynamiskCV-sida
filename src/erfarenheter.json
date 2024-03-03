@@ -1,0 +1,61 @@
+{
+    "arbeten": [
+        {
+            "id": 1,
+            "namn": "SYNSAM DIRFT AB",
+            "år": "2016 - 2023",
+            "beskrivning": "Sale and costumer adviser",
+            "plats": "Östersund"
+        },
+        {
+            "id": 2,
+            "namn": "GO EXCELLENT",
+            "år": "2015 - 2016",
+            "beskrivning": "Kundtjänstmedarbetare",
+            "plats": "Östersund"
+        }
+    ],
+    "utbildning": [
+        {
+            "id": 1,
+            "namn": "SYSTEMUTVECKLING .NET MED AI KOMPETENS",
+            "år": "2023 - ",
+            "exmen": "Examen 2025",
+            "beskrivning": "Edugrade",
+            "plats": "Distans"
+        },
+        {
+            "id": 2,
+            "namn": "NATURVETENSKAP",
+            "år": "2011 - 2014",
+            "beskrivning": "Mikael Elias Gymnasium",
+            "plats": "Örnsköldsvik"
+        }
+    ],
+    "aJobb": [
+        {
+            "id": 1,
+            "namn": "Världscupfinalerna och Världsmästerskapen i alpint ",
+            "år": "2018 - 2019",
+            "beskrivning": "Gruppchef, ansvarig över en sektion av tävlingsbacken",
+            "plats": "Åre"
+        },
+        {
+            "id": 2,
+            "namn": "Junior världsmästerskapen i alpint",
+            "år": "2017",
+            "beskrivning": "Volontär på JVM i Alpint.",
+            "plats": "Åre"
+        },
+        {
+            "id": 3,
+            "namn": "World Cup Åre",
+            "år": "2015",
+            "tillfälle1": "Februair",
+            "tillfälle2": "Mars",
+            "tillfälle3": "December",
+            "beskrivning": "Volontär på världscupen i Alpint och skicross",
+            "plats": "Åre"
+        }
+    ]
+}

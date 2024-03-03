@@ -1,0 +1,178 @@
+.body-container {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: #1e2612;
+    margin: 0;
+    width: 100%;
+}
+
+/* Här är styling som gäller för alla rubriker och texter */
+.body-container h1 {
+    margin: 20px;
+    font-size: 65px;
+}
+
+.body-container h2 {
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+.body-container h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.body-container p {
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+}
+
+/*-----------------------------------------------------------*/
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.margin-top {
+    height: 8vh;
+}
+
+.container {
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 95vw;
+}
+
+.photo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 40%;
+    height: 80vh;
+}
+
+.photo img {
+    max-height: 100%;
+    width: 80%;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    width: 50%;
+    text-align: center;
+    background-color: #fff;
+    height: 100%;
+}
+
+.formBox {
+    margin-top: 5%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.inputBox {
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+.inputBox.w50 {
+    width: 47%;
+}
+
+.inputBox.w100 {
+    width: 100%;
+}
+
+.inputBox input,
+.inputBox textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px 5px;
+    font-size: 18px;
+    color: #333;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+
+.inputBox textarea {
+    height: 10vh;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 5px;
+    padding: 5px 0;
+    pointer-events: none;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.inputBox input:focus~span,
+.inputBox input:valid~span,
+.inputBox textarea:focus~span,
+.inputBox textarea:valid~span {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #757D4C;
+}
+
+/*------Skicka knappen-----------*/
+.inputBox input[type="submit"] {
+    position: relative;
+    cursor: pointer;
+    background-color: #895D62;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    padding: 12px;
+}
+
+.inputBox input[type="submit"]:hover {
+    background-color: #5f7991;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
+        align-items: center;
+    }
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    .photo {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .photo img {
+        border-radius: 50%;
+    }
+}

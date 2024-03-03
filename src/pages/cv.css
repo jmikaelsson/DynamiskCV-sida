@@ -1,0 +1,197 @@
+.body-container {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Här är styling som gäller för alla rubriker och texter */
+.body-container h1 {
+  margin: 20px;
+  font-size: 65px;
+  color: #1E2612;
+}
+
+.body-container h2 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 35px;
+  color: #757D4C;
+}
+
+.body-container h3 {
+  font-size: 20px;
+  font-weight: 100;
+  color: #1E2612;
+  font-weight: 600;
+}
+.body-container h4 {
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+}
+.body-container h5 {
+  font-size: 17px;
+  font-weight: 200;
+  color: black;
+}
+.body-container p {
+  font-size: 20px;
+  font-weight: 200;
+  color: black;
+}
+
+/*------------------------------------------------------*/
+.main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+/*------------------------------------------------------*/
+/*Vänstersida
+  Faktaruta*/
+.fakta-om-mig {
+  background-color: #f2f2f2;
+  border-right: #40493B 1px solid;
+  border-left: #40493B 1px solid;
+  height: 60vh;
+  min-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.fakta-om-mig h2 {
+  font-size: 50px;
+  padding-bottom: 5%;
+}
+
+.fakta-om-mig td {
+  vertical-align: text-top;
+  padding-right: 25px;
+  padding-bottom: 10%;
+}
+
+.fakta-om-mig th {
+  vertical-align: text-top;
+  padding-right: 25px;
+  padding-bottom: 10%;
+}
+
+/*Höger sida 
+  Mina erfarenheter*/
+.CV {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 10%;
+}
+
+.utbildning,
+.arbeten {
+  padding-top: 10%;
+  text-align: center;
+}
+
+.utbildning table,
+.arbeten table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+
+.utbildning td,
+.arbeten td {
+  text-align: right;
+  vertical-align: middle;
+  width: 8rem;
+  padding-right: 15px;
+  padding-bottom: 5%;
+}
+
+.utbildning td#info,
+.arbeten td#info {
+  text-align: right;
+  vertical-align: middle;
+  width: max-content;
+  padding-right: 15px;
+}
+
+
+
+/*---------------------------------------------------*/
+.scroll-bild {
+  background-color: white;
+  background-image: url("../pages/img/20190209_133927.jpg");
+  color: #282e25;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 40rem;
+}
+
+/*--------------------------------*/
+.andra-erfarenheter {
+  text-align: center;
+}
+
+.andra-erfarenheter td {
+  text-align: left;
+  vertical-align: middle;
+  width: 8rem;
+  vertical-align: top;
+  padding-right: 15px;
+  padding-bottom: 25px;
+}
+.andra-erfarenheter td#info {
+  vertical-align: middle;
+  width: max-content;
+}
+
+.andra-erfarenheter p {
+  font-size: small;
+}
+
+.andra-erfarenheter h1 {
+  padding-bottom: 8%;
+}
+
+td h3 {
+  margin-top: 0%;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+  .fakta-om-mig {
+    border-left: none;
+    border-right: none;
+    border-top: #40493B 1px solid;
+    border-bottom: #40493B 1px solid;
+    width: 70vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CV {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5% 10%;
+  }
+
+}
