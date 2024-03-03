@@ -1,0 +1,233 @@
+.body-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+
+
+/* Här är styling som gäller för alla rubriker och texter */
+.body-container h1 {
+    margin: 20px;
+    font-size: 65px;
+    color: #313131;
+}
+
+.body-container h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 35px;
+    color: #757D4C;
+}
+
+.body-container h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.body-container p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #282e25;
+}
+
+/*--------------------------------------------------------------------*/
+
+.portfolio-header {
+    text-align: center;
+    padding: 5% 10%;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    flex: 1;
+    padding: 5% 5%;
+}
+
+.portfolio-item {
+    text-align: center;
+    border: 1px solid #895D62;
+    box-shadow: #e7e7e7 2px 2px 4px;
+    border-radius: 5%;
+    width: 20rem;
+    height: 25rem;
+    background-color: #f2f2f2;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item .item h3 {
+    padding-top: 1.5rem;
+}
+
+.imgBox {
+    width: 100%;
+    height: 75%;
+}
+.portfolio-item .item,
+.contentBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.contentBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f2f2f2;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+}
+
+.portfolio-item:hover .contentBox::before {
+    transform: scaleX(1);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: left;
+}
+
+.contentBox {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+}
+
+.contentBox .content {
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    transition: 0.8s;
+    transform: translateX(-300px);
+}
+
+.portfolio-item:hover .contentBox .content {
+    transform: translateX(0px);
+}
+
+.portfolio-item:hover .contentBox .content div {
+    display: flex;
+    align-items: flex-end;
+}
+
+.contentBox .content .button {
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    width: fit-content;
+    background-color: #f2f2f2;
+    border: 1px solid #895D62;
+    box-shadow: #e7e7e7 2px 2px 4px;
+    color: rgb(8, 8, 8);
+    padding: 15px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 1rem;
+    margin-bottom: 5%;
+}
+
+.portfolio-item:hover .contentBox .content .button:hover {
+    transition: 280ms ease-in-out;
+    background-color: #895D62;
+    color: white;
+    border: #313131 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+.imgBox {
+    display: flex;
+    padding-bottom: 1rem;
+}
+
+.imgBox img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    width: fit-content;
+    background-color: #f2f2f2;
+    border: 1px solid #895D62;
+    box-shadow: #e7e7e7 2px 2px 4px;
+    color: rgb(8, 8, 8);
+    padding: 15px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 1rem;
+    margin-bottom: 5%;
+}
+
+.button a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+}
+
+.button:hover {
+    transition: 280ms ease-in-out;
+    background-color: #895D62;
+    color: white;
+    border: #313131 1px solid;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    .portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5% 10%;
+    }
+
+    .portfolio-header {
+        text-align: center;
+        padding: 5% 10%;
+    }
+
+    .imgBox {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imgBox img {
+        width: 100%;
+    }
+
+    .portfolios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 0;
+        width: 100%;
+    }
+}
